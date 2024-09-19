@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Survey Calculation</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2 style="text-align: center;">Traverse Survey Computation</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Station</th>
+            <th>Distance (m)</th>
+            <th>Bearing (degrees)</th>
+            <th>ΔE (Easting)</th>
+            <th>ΔN (Northing)</th>
+            <th>Cumulative E</th>
+            <th>Cumulative N</th>
+        </tr>
+    </thead>
+    <tbody id="traverseTable">
+        <tr>
+            <td>1</td>
+            <td><input type="number" id="distance1"></td>
+            <td><input type="number" id="bearing1"></td>
+            <td id="deltaE1"></td>
+            <td id="deltaN1"></td>
+            <td id="cumulativeE1">0.00</td>
+            <td id="cumulativeN1">0.00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="number" id="distance2"></td>
+            <td><input type="number" id="bearing2"></td>
+            <td id="deltaE2"></td>
+            <td id="deltaN2"></td>
+            <td id="cumulativeE2"></td>
+            <td id="cumulativeN2"></td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="computeTraverse()">Compute Traverse</button>
+
+<!-- Link the external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
